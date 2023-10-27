@@ -1,0 +1,189 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0E0E0E;
+    color: #FFF;
+}
+
+#title {
+    text-align: center;
+    font-size: 36px;
+    padding-top: 50px;
+    font-weight: bold;
+}
+#casino-list{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.casino-list {
+    max-width: 900px;
+    margin: 30px auto;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #1E1E1E;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.casino {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    align-items: center;
+    padding: 15px 30px;
+    border-bottom: 1px solid #444;
+    position: relative;
+    background-color: white;
+}
+
+.casino:last-child {
+    border-bottom: none;
+}
+
+.casino h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.casino p {
+    margin: 0;
+    padding: 0;
+}
+
+.casino > p {
+    /* background-color: #E51C23; */
+    color: #000000;
+    padding: 5px 10px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.casino ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: #0E0E0E;
+}
+
+.casino ul p {
+    margin: 0;
+}
+
+.casino .user-rating {
+    font-size: 16px;
+    color: #FFD700;
+}
+
+.casino .overall-rating {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.casino .play-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.casino .play-button:hover {
+    background-color: #388E3C;
+}
+
+.casino-logo-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.casino-logo {
+    max-width: 100px;  
+    height: auto;
+}
+
+.label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #28a745;  
+    color: white;  
+    padding: 2px 8px;  
+    border-top-left-radius: 5px;  
+    font-weight: bold;  
+    font-size: 12px; 
+}
+.casino-header {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr 1fr 1fr;  
+    gap: 10px;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #2E2E2E; 
+    border-bottom: 1px solid #444;
+    font-weight: bold; 
+    text-transform: uppercase; 
+}
+
+.casino-header:hover {
+    background-color: #3E3E3E; 
+}
+
+@media (max-width: 768px) {
+    .casino {
+        grid-template-columns: 1fr;  
+        gap: 15px; 
+        padding: 20px; 
+    }
+
+    .casino h2 {
+        font-size: 24px;  
+    }
+
+    .casino .play-button {
+        padding: 15px 25px;  
+        text-align: center;
+    }
+
+    .casino-header {
+        display: none;
+      
+    }
+    
+    .casino-logo {
+        display: block;
+        margin: 0 auto; 
+    }
+}
+@media (min-width: 769px) {
+    body {
+        background-image: url('https://www.sportsadda.com/static-assets/waf-images/b1/62/2f/16-9/SQzYW7koBs.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+}
+
+.play-tosh-header {
+      height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    font-size: 50px;
+    text-align: center;
+    color: rgb(185, 19, 19);
+    padding: 20px 0;
+    margin: 0;
+    font-weight: bold;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+}
